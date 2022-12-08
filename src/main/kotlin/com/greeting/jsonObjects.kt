@@ -37,3 +37,11 @@ data class MessageVariables (
     val company: Company,
     val guest: Guest,
 )
+
+@Serdeable
+data class CustomTemplate (
+    val id: Int,
+    val companyId: Int,
+    val guestId: Int,
+    val message: String,
+)
