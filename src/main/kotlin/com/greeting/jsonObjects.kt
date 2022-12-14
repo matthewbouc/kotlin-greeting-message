@@ -10,7 +10,6 @@ data class Company (
     val timezone: String,
 )
 
-
 @Serdeable
 data class Template (
     val id: Int,
@@ -29,13 +28,6 @@ data class Reservation (
     val roomNumber: Int,
     val startTimestamp: Int,
     val endTimestamp: Int,
-)
-
-@Serdeable
-data class MessageVariables (
-    val salutation: String,
-    val company: Company,
-    val guest: Guest,
 )
 
 @Serdeable
